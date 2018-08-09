@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: #000000;
+}
+
+body div {
+    top: 0;
+    min-height: 55vh;
+    padding-top: 45vh;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.welcome {
+    
+    background-color: #aaffd6;
+}
+
+.nav-bar ul {
+    text-align: right;
+    position: fixed;
+    width: 100%;
+    background-color: #aaffd6;
+}
+
+.nav-bar ul li{
+    display: inline-block;
+    margin: 45px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
+.portfolio {
+    background-color: #ffb5aa;
+    padding-top: 10vh;
+    /*padding-bottom: 35vh;*/
+    padding-bottom: 0;
+}
+
+.portfolio-links {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+    margin-top: 15vh;
+}
+
+.portfolio-links img{
+    display: flex;
+    width: 35vh;
+    height: 35vh;
+    border: 2px solid;
+    border-color: #c1aaff;
+    
+}
+
+.portfolio-title{
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-bottom: 25vh;
+    min-height: 0;
+    border: 2px solid;
+    border-color: #c1aaff;
+    font-weight: bold;
+}
+
+.sample-game {
+    padding-top: 10vh;
+    padding-bottom: 35vh;
+    background-color: #c1aaff;
+}
+
+canvas {
+    background: #f50045;
+    display: block;
+    margin: 0 auto; 
+  }
+
+.external-links {
+    padding-top: 10vh;
+    background-color: #ffe0aa;
+    display: flex;
+    flex-direction: column;
+}
+
+.links-list{
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.links {
+    padding: 45px 35px 45px 35px;
+    font-weight: bold;
+    border: 2px solid #c1aaff;
+    border-radius: 100%;
+    background-color: #FFFFFF;
+}
+
+.links:hover {
+    transition-duration: 500ms;
+    background-color: #c1aaff;
+}
