@@ -2,41 +2,81 @@
 <html>
 <head>
     <title>James Bias Portfolio</title>
+    <!-- jquery needed for js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- js for bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="homepage-style.css" type="text/css" />
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  
 </head>
 <body>
-    <nav class="nav-bar" >
+
+    <!-- nav bar from bootstrap -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">James</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#portfolio">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#sample-game">Game</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#external-links">Links</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    
+    <!-- <nav class="nav-bar" >
         <ul>
             <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
             <li><a href="#sample-game">Game</a></li>
             <li><a href="#external-links">Links</a></li>
         </ul>
-    </nav>
+    </nav> -->
     
     <main>
-        <div class="welcome">
+        <div class="container">
+        <div class="welcome fill-screen">
             <h1>Welcome to my Website.</h1>
+            <hr>
         </div>
-        <div id="portfolio" class="portfolio">
-            <h1>Portfolio</h1>
-            <ul class="portfolio-links">
-                <li><a href="https://codepen.io/jamesbias/full/zLrKdp" target="_blank"><img src="images/tribute-page.PNG" /><div class="portfolio-title">Tribute Page</div></a> </li>
-                <li><a href="https://codepen.io/jamesbias/full/EpyXxM" target="_blank"><img src="images/survey-page.PNG" /><div class="portfolio-title">Survey Page</div></a> </li>
-                <li><a href="https://codepen.io/jamesbias/full/djqoOP" target="_blank"><img src="images/technical-page.PNG" /><div class="portfolio-title">Tutorial Page</div></a> </li>
-
+        <div id="portfolio" class="portfolio fill-screen">
+            <h2>Portfolio 
+                <br>(Mostly CSS)</h2>
+            <ul class="portfolio-links row">
+                <li class="col-md-4 col-xs-12"><a href="https://codepen.io/jamesbias/full/zLrKdp" target="_blank"><img src="images/tribute-page.PNG" /><div class="portfolio-title">Tribute Page</div></a> 
+                    <p class="description">Demonstrates a basic static webpage that is mobile ready-ish. Also demonstrates gradient colors ;)</p></li>
+                <li class="col-md-4 col-xs-12"><a href="https://codepen.io/jamesbias/full/EpyXxM" target="_blank"><img src="images/survey-page.PNG" /><div class="portfolio-title">Survey Page</div></a>
+                <p class="description">Demonstrates a form made with vanilla CSS. Yes I know that Bootstrap has a form template... Yes I should have used it... Also there is no functionality... Yet...</p> </li>
+                <li class="col-md-4 col-xs-12"><a href="https://codepen.io/jamesbias/full/djqoOP" target="_blank"><img src="images/technical-page.PNG" /><div class="portfolio-title">Tutorial Page</div></a>
+                <p class="description">Just a simple Python tutorial that I copied from the internet. I wanted to try out the "section" and "nav" tags.</p> </li>
             </ul>
+            <hr>
         </div>
-        <div id="sample-game" class="sample-game" >
-            <h1>
+        <div id="sample-game" class="sample-game fill-screen" >
+            <h2>
                 Simple JavaScript Game
-            </h1>
+            </h2>
             <canvas id="myCanvas" width="480" height="320"></canvas>
             <script src="brick-break.js"></script>
         </div>
         <div id="external-links" class="external-links" >
-            <h1>
+            <h2>
                 External Links
-            </h1>
+            </h2>
             <ul class="links-list">
                 <li><a class="links" href="https://github.com/jebias" target="_blank">GitHub</a></li>
                 <li><a class="links" href="https://codepen.io/jamesbias/" target="_blank">CodePen</a></li>
@@ -45,6 +85,7 @@
                 
             
         </div>
+    </div>
     </main>
 </body>
 </html>
