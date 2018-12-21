@@ -1,4 +1,71 @@
-* {
+html, body {
+    background: black;
+    color: white;
+    height: 100%;
+    font-family: 'Indie Flower', cursive;
+}
+
+main {
+    margin-top: 5%;
+    text-align: center;
+}
+
+h2 {
+
+    text-align: center;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+.fill-screen {
+    height: 100vh;
+}
+
+.welcome {
+    padding-top: 40vh;
+}
+
+.portfolio {
+    padding-top: 20vh;
+}
+
+.portfolio-links {
+    list-style-type: none;
+    padding-left-left: none;
+}
+
+.portfolio-links li img {
+    width: 100%;
+}
+
+.portfolio-title {
+    text-align: center;
+    color: white;
+}
+
+.portfolio ul {
+    margin: auto;
+    margin-top: 5vh;
+}
+
+.sample-game {
+    padding-top: 30vh
+}
+
+.external-links ul {
+    padding-left: 0;
+}
+.external-links ul li {
+    list-style-type: none;
+}
+
+
+
+/** {
     padding: 0;
     margin: 0;
     text-align: center;
@@ -44,7 +111,7 @@ a:link {
 .portfolio {
     background-color: #ffb5aa;
     padding-top: 10vh;
-    /*padding-bottom: 35vh;*/
+    /*padding-bottom: 35vh;
     padding-bottom: 0;
 }
 
@@ -113,4 +180,4 @@ canvas {
 .links:hover {
     transition-duration: 500ms;
     background-color: #c1aaff;
-}
+}*/
